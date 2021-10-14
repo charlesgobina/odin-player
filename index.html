@@ -11,37 +11,49 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
     <title>Document</title>
 </head>
 <body>
     <div id="heads">
         <div id="logo">
-            <i class="material-icons">menu</i>
-            <img src="images/youtubelogo.svg" width="100" height="100" alt="Youtube Logo">
-        </div>
-        <form action="">
-            <div id="search">
-                <input type="text" placeholder="Search">
+            <div id="icon-menu">
+                <i  class="material-icons">menu</i>
             </div>
-            <div id="search-icon">
-                <i class="material-icons">search</i>
+            <div>
+                <img id="yt-logo" src="images/youtubelogo.svg" width="90" alt="Youtube Logo">
+            </div>
+            
+        </div>
+        <form id="search-form" action="">
+            <div id="search-props">
+                <div id="search">
+                    <input id="search-box" type="text" placeholder="Search">
+                </div>
+                <div id="search-icon">
+                    <i class="material-icons search">search</i>
+                </div>
+            </div>
+            <div id="mic-icon">
+                <i class="material-icons">mic</i>
             </div>
         </form>
-        <div id="mic-icon">
-            <i class="material-icons">mic</i>
+        <div id="misc">
+            
+            <div id="vid-icon" class="left-corner">
+                <i class="material-icons">video_call</i>
+            </div>
+            <div id="view-icon" class="left-corner">
+                <i class="material-icons">view_comfy</i>
+            </div>
+            <div id="not-icon" class="left-corner">
+                <i class="material-icons">notifications</i>
+            </div>
+            <div id="avatar-icon" class="left-corner">
+                <i class="material-icons">person</i>
+            </div>
         </div>
-        <div id="vid-icon">
-            <i class="material-icons">video_call</i>
-        </div>
-        <div id="view-icon">
-            <i class="material-icons">view_comfy</i>
-        </div>
-        <div id="not-icon">
-            <i class="material-icons">notifications</i>
-        </div>
-        <div id="avatar-icon">
-            <i class="material-icons">person</i>
-        </div>
+        
     </div>
     
     <main>
