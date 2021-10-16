@@ -2,15 +2,21 @@
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
+    
+}
+
+.main-wrapper{
+    background-color: rgb(249, 249, 249);
+    
 }
 
 #heads{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-left: 2%;
-    margin-right: 2%;
-    padding: 10px;
+    padding-left: 2%;
+    padding-right: 2%;
+    background-color: rgb(255, 255, 255);
 }
 
 #logo{
@@ -116,7 +122,9 @@ main{
     display:grid;
     grid-template-columns: repeat(4,2fr);
     margin-right: 10%;
-    margin-left:10%
+    margin-left:10%;
+    padding-top: 30px;
+    background-color: rgb(249, 249, 249);
 }
 
 #video-screen{
@@ -131,10 +139,11 @@ video{
     width: 98%    !important;
     height: 98%   !important;
 }
-
+/* Right side styles start */
 .vid-wrapper{
     display:flex;
     justify-content: space-between;
+    padding: 5px;
 }
 
 .video-thumbnail{
@@ -168,6 +177,153 @@ video{
     overflow: hidden;
     text-overflow: ellipsis;
 }
+/* Right side styles end */
+
+
+/* Video screen styles start */
+
+#video-title{
+    margin-top: 10px;
+}
+
+#video-actions{
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-between;
+    margin-bottom: 10px;
+
+}
+
+#likes-dislikes{
+    display: flex;
+    margin-right: 2%;
+}
+
+.act{
+    display: flex;
+    margin-left: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.act-text{
+    margin-left: 10px;
+    font-size: small;
+}
+
+#vid-topic{
+    font-weight: 500;
+    font-size: large;
+}
+
+#subs{
+    font-size: 15px;
+    color: rgb(114, 114, 114);
+}
+
+hr{
+    margin-right: 2%;
+    margin-top:20px;
+    margin-bottom: 10px;
+    color: rgb(114, 114, 114);
+    
+}
+
+#creator-info{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#channel-info{
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-right: 2%;
+}
+
+#channel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#others{
+    margin-left: 10px;
+}
+
+#name{
+    font-weight: bold;
+    font-size: 14px;
+    word-spacing:0.5px;
+}
+
+#subscribers{
+    font-size: smaller;
+    margin-top: 1px;
+    color: rgb(114, 114, 114);
+}
+
+#subs-btn{
+    border: none;
+    outline: none;
+    color: white;
+    background-color: rgb(204, 0, 0);
+    padding: 10px;
+    font-family: 'Roboto', arial, helvetica, sans-serif;
+    font-weight: bold;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 14px;
+    border-radius:5%;
+    cursor: pointer;
+    
+}
+
+#channel-pic{
+    border: 1px solid rgb(248, 248, 248);
+    border-radius: 50%;
+    padding: 5px;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(104, 159, 57);
+    color: white;
+}
+
+.avy{
+    margin-top: 6px;
+    margin-left: 7px;
+}
+
+#sm{
+    color: rgb(114, 114, 114);
+    text-decoration: none;
+    font-family: 'Roboto', arial, helvetica, sans-serif;
+    font-size: small;
+    margin-top: 5px;
+    font-weight: 500;
+}
+
+#video-tagline{
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+}
+
+.sm-content{
+    margin-left: 5.6%;
+}
+
+#tag-text{
+    grid-column: 1/3;
+    font-size: 14px;
+    line-height:18px;
+}
+
+/* #subscribe-button{
+    background-color: red;
+} */
+
+
+/* Video screen styles end */
 
 
 
