@@ -14,8 +14,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 2%;
-    padding-right: 2%;
     background-color: rgb(255, 255, 255);
 }
 
@@ -121,8 +119,8 @@
 main{
     display:grid;
     grid-template-columns: repeat(4,2fr);
-    margin-right: 10%;
-    margin-left:10%;
+    margin-right: 5%;
+    margin-left:5%;
     padding-top: 30px;
     background-color: rgb(249, 249, 249);
 }
@@ -135,9 +133,17 @@ main{
     width: fit-content;
 }
 
-video{
-    width: 98%    !important;
-    height: 98%   !important;
+#frame {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+}
+#frame iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 99%;
+    height: 99%;
 }
 /* Right side styles start */
 .vid-wrapper{
@@ -299,8 +305,7 @@ hr{
     text-decoration: none;
     font-family: 'Roboto', arial, helvetica, sans-serif;
     font-size: small;
-    margin-top: 5px;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 #video-tagline{
@@ -309,7 +314,12 @@ hr{
 }
 
 .sm-content{
-    margin-left: 5.6%;
+    margin-left: 5%;
+    
+}
+
+#sm-link{
+    margin-top: 15px;
 }
 
 #tag-text{
@@ -324,6 +334,113 @@ hr{
 
 
 /* Video screen styles end */
+
+/* Comment Section styles start */
+
+#comments-area-one{
+    display: flex;
+    margin-top: 20px;
+}
+
+#sorting{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin-left: 20px;
+    font-size: 14px;
+    font-family: 'Roboto', arial, helvetica, sans-serif;
+    font-weight: 600;
+}
+
+#sort{
+    margin-left: 5px;
+}
+
+#comments-area-two{
+    display: flex;
+    align-items: end;
+    margin-top: 20px;
+}
+
+#avatar{
+    border: 1px solid rgb(248, 248, 248);
+    border-radius: 50%;
+    padding: 5px;
+    width: 25px;
+    height: 25px;
+    margin-top: -7px;
+    background-color: rgb(30, 113, 238);
+}
+
+#input-comment{
+    width: 98%;
+    border-bottom: 1px solid rgb(204, 204, 204);
+    margin-right: 2%;
+    
+}
+
+#input-comment input{
+    height: 25px; 
+    width: 100%;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px;
+    border: none;
+    outline: none; 
+    background-color: rgb(249, 249, 249);
+}
+
+/* Comment Section styles ends */
+
+/* Links at the top of the right pane */
+
+ul{
+    list-style: none;
+    display: flex;
+    margin-bottom: 10px;
+    
+    
+}
+
+#first-child{
+    background-color:black;
+    color: white;
+    border: none;
+}
+
+
+
+
+.git{
+    text-decoration: none;
+    border: 1px solid rgb(212, 212, 212);
+    border-radius: 20px 20px 20px 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 15px;
+}
+
+.gita{
+    margin-left: 10px;
+    color: rgb(67, 67, 67);
+    background-color: rgb(236, 236, 236);
+    
+}
+
+/* Some Media Queries */
+
+@media only screen and (max-width: 1075px) {
+    /* For mobile phones: */
+    #video-screen{
+        grid-column:1/5;
+    }
+
+    #thumbnails{
+        margin-top: 20px;
+    }
+  }
 
 
 
