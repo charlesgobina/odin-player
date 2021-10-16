@@ -111,3 +111,63 @@
     margin-top: -7px;
     background-color: rgb(30, 113, 238);
 }
+
+main{
+    display:grid;
+    grid-template-columns: repeat(4,2fr);
+    margin-right: 10%;
+    margin-left:10%
+}
+
+#video-screen{
+    grid-column:1/4
+}
+
+#main-vid{
+    width: fit-content;
+}
+
+video{
+    width: 98%    !important;
+    height: 98%   !important;
+}
+
+.vid-wrapper{
+    display:flex;
+    justify-content: space-between;
+}
+
+.video-thumbnail{
+    position: relative;
+}
+
+.vid-info{
+    margin-left: 10px;
+}
+
+.timestamp{
+    position: absolute;
+    background-color: black;
+    color: white;
+    font-size: small;
+    padding: 5px;
+    top: 60%;
+    right: 2%;
+}
+
+.vid-title{
+    font-size:small;
+    font-weight: bold;
+
+}
+
+.bottom-info{
+    margin-top:5px;
+    font-size: smaller;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+
